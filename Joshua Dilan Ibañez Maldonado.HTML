@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JOSHUA DILAN IBAÑEZ MALDONADO</title>
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.grid-container>*{
+    box-shadow: -1px 1px 7px 0px rgba(red, green, blue, alpha);
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    background-color: #2F4F4F;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #708090;
+}
+
+.main{
+    grid-area: main;
+    background-color: #2F4F4F;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #708090;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #2F4F4F;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer"
+}
+@media (min-width:400px) {
+    .grid-container{
+        grid-template:
+        "header header" 100px
+        "navbar navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px/200px auto;
+    }
+}
+
+@media (main-width:600px){
+    
+}
+
+.grid-container{
+    grid-template:
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";
+}
+
+@media (min-width:900px){
+    .grid-container{
+        grid-template:
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px/200px auto;
+    }
+}
+    </style>
+</head>
+
+<body class="grid-container">
+    <header class="header"><h1 style="font-family:cursive;color:dodgerblue;">Joshua Dilan Ibañez Maldonado </h1></header>
+    <nav class="navbar"><h1></h1>
+    <h3><!DOCTYPE html>
+<html>
+  
+<head>
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<center> 
+<body>
+</center>
+    <style>
+        
+        /* Navigation bar styling */
+        .menu-list {
+            max-width: 300px;
+            margin: auto;
+            height: 500px;
+            color: white;
+            background-color: #708090;
+            border-radius: 10px;
+        }
+        
+        /* logo, navigation menu styling */
+        .geeks {
+            overflow: hidden;
+            background-color: #111;
+            position: relative;
+        }
+        
+        /* stylinf navigation menu */
+        .geeks #menus {
+            display: none;
+        }
+        
+        /* link specifi styling */
+        .geeks a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 16px;
+            font-size: 16px;
+            display: block;
+        }
+        
+        /* navigation toggle menu styling */
+        .geeks a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        /* hover effect on navigation logo and menu */
+        .geeks a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+  
+<body>
+  
+    <div class="menu-list">
+  
+        <!-- Logo and navigation menu -->
+        <div class="geeks">
+            <a href="https://www.facebook.com/profile.php?id=100072513276189" class="">Mas informacion</a>
+            <div id="menus">
+              
+              
+                <a href="https://youtube.com/c/memitoiba%C3%B1ez">Nombre artistico</a> 
+                <a href="https://youtu.be/lwAANm3jZ5o">cancion favorita</a>
+                <a href="https://www.realmadrid.com/">Equipo favorito </a>
+                <a href="https://es.m.wikipedia.org/wiki/Voleibol#:~:text=El%20voleibol%2C%20v%C3%B3leibol%2C%20volibol%2C,separada%20por%20una%20red%20central.">Deporte favorito</a>
+             <a href="https://es.m.wikipedia.org/wiki/Carnitas">Comida favorita</a> 
+                <a href="https://es.m.wikipedia.org/wiki/J._M._W._Turner">Pintor favorito</a>
+                <a href="http://museopalaciodebellasartes.gob.mx/">Lugar favorito</a>
+                <a href="https://www.ironmaiden.com/">Grupo favorito</a>
+                <a href="https://es.m.wikipedia.org/wiki/Pentag%C3%B3n_Jr.">Luchador favorito </a>
+                <a href="https://es.m.wikipedia.org/wiki/Halo_4:_Forward_Unto_Dawn">Pelicula favorita </a>
+            </div>
+  
+            <!-- Bar icon for navigation -->
+            <a href="javascript:void(0);" class="icon" 
+                    onclick="geeksforgeeks()">
+  
+                <i onclick="myFunction(this)" 
+                        class="fa fa-plus-circle">
+                </i>
+            </a>
+        </div>
+    </div>
+  
+    <script>
+        
+        // Function to toggle the bar
+        function geeksforgeeks() {
+            var x = document.getElementById("menus");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+  
+    <script>
+        
+        // Function to toggle the plus menu into minus
+        function myFunction(x) {
+            x.classList.toggle("fa-minus-circle");
+        }
+    </script>
+    
+</body>
+  
+</html> </h3></nav>
+    <aside class="sidebar"><h1 style="font-family:cursive;color:dodgerblue;">Aque dedica el tiempo</h1>
+      <h3> Me gusta pasar el tiempo con mis amigos y amigas, todos los dias los veo para pasar el tiempo porque son buena onda todos son divertidos.
+      </h3>
+      <h1 style="font-family:cursive;color:dodgerblue;">Forma de ser un trabajo></h1>
+      <h3> Yo tomo enserio un trabajo por que asi aprendo como funcionan las cosas para que yo pueda hacerlas por que en esta vida mo es facil y tienes que aprender las cosas para que un dia puedas ser el dueño de una empresa.</h3>
+      <h1 style="font-family:cursive;color:dodgerblue;">Forma de ser</h1> 
+      <h3> Mi formas de ser dependiendo del lugar donde este por ejemplo si estoy con mis amigos soy desmadroso en un trabajo soy serio por que un trabajo es importante por que de ay sacas los gastos para familia.</h3></aside>
+    <article class="main"><h1 style="font-family:cursive;color:dodgerblue;">Datos generales</h1>
+     <h3> Fecha de nacimiento</h3>
+     <h3> 23 de dicembre del 2002</h3>
+     <h3> Edad</h3>
+     <h3> 19 años</h3>
+     <h3> Primaria</h3>
+     <h3> Adolfo Lopez Mateos</h3>
+     <h3> Secundaria</h3>
+     <h3> Ricardo Flores Magon</h3>
+     <h3> Preparatoria</h3>
+     <h3> Lazaro Cardenas</h3>
+     <h1 style="font-family:cursive;color:dodgerblue;"> Lo que me gusta </h1>
+     <h3> Ser youtuber es una pasatiempo pes una forma de espresar lo que siento atraves de la musica, me gusta progamar pense que era mas dificil,me gusta dibujar pero no soy buen dibujante pero trato de serlo.</h3>
+     <h1 style="font-family:cursive;color:dodgerblue;"> Formas de trabajar</h1>
+     <h3> Mi forma de trabajar en grupos es que todos trabajen y si uno no trabaja eso mo me gusta en un grupo todos tienen que aportar ideas para el trabajo. </h3>
+     </article>
+    <footer class="footer"><h1 style="font-family:cursive;color:dodgerblue;">para mas informacion</h1>
+   <header>
+  <section class="wrapper">
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+			
+    </nav>
+    </section>
+</header> </footer>
+
+</body>
+</html>
